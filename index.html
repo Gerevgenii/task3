@@ -175,6 +175,7 @@
       border: 0;
       height: 8px;
       margin: 0;
+      width: var(--skill-width);
     }
 
     .skill-bar {
@@ -338,36 +339,6 @@
       overflow: hidden;
       object-fit: cover;
     }
-    .react {
-      width: 498px;
-    }
-    .angular {
-      width: 387px;
-    }
-    .htmlcss {
-      width: 554px;
-    }
-    .javascript {
-      width: 110px;
-    }
-    .python {
-      width: 138px;
-    }
-    .softskill {
-      width: 443px;
-    }
-    .motiongraphics {
-      width: 332px;
-    }
-    .ux {
-      width: 110px;
-    }
-    .ui {
-      width: 277px;
-    }
-    .threede {
-      width: 138px;
-    }
   </style>
 </head>
 <body>
@@ -459,66 +430,66 @@ I'm creative front-end developer</pre>
     <section class="column-gap skills" id="screen5">
       <h1>Skills</h1>
       <div class="content row-gap">
-        <div class="content-column column-gap">
+        <div class="column-gap">
           <div class="skill-view column-gap">
             <div class="font2">React</div>
             <div class="skill-bar">
-              <hr class="react" />
+              <hr style="--skill-width: 498px"/>
             </div>
           </div>
           <div class="skill-view column-gap">
             <div class="font2">Angular</div>
             <div class="skill-bar">
-              <hr class="angular" />
+              <hr style="--skill-width: 387px"/>
             </div>
           </div>
           <div class="skill-view column-gap">
             <div class="font2">HTML + CSS</div>
             <div class="skill-bar">
-              <hr class="htmlcss" />
+              <hr style="--skill-width: 554px"/>
             </div>
           </div>
           <div class="skill-view column-gap">
             <div class="font2">Javascript</div>
             <div class="skill-bar">
-              <hr class="javascript" />
+              <hr style="--skill-width: 110px"/>
             </div>
           </div>
           <div class="skill-view column-gap">
             <div class="font2">Python</div>
             <div class="skill-bar">
-              <hr class="python" />
+              <hr style="--skill-width: 138px"/>
             </div>
           </div>
-        </div><div class="content-column column-gap">
+        </div><div class="column-gap">
           <div class="skill-view column-gap">
             <div class="font2">Soft skill</div>
             <div class="skill-bar">
-              <hr class="softskill" />
+              <hr style="--skill-width: 443px"/>
             </div>
           </div>
           <div class="skill-view column-gap">
             <div class="font2">Motion graphics</div>
             <div class="skill-bar">
-              <hr class="motiongraphics" />
+              <hr style="--skill-width: 332px"/>
             </div>
           </div>
           <div class="skill-view column-gap">
             <div class="font2">UX</div>
             <div class="skill-bar">
-              <hr class="ux" />
+              <hr style="--skill-width: 110px"/>
             </div>
           </div>
           <div class="skill-view column-gap">
             <div class="font2">UI</div>
             <div class="skill-bar">
-              <hr class="ui" />
+              <hr style="--skill-width: 277px"/>
             </div>
           </div>
           <div class="skill-view column-gap">
             <div class="font2">3D</div>
             <div class="skill-bar">
-              <hr class="threede" />
+              <hr style="--skill-width: 138px"/>
             </div>
           </div>
         </div>
@@ -527,11 +498,11 @@ I'm creative front-end developer</pre>
         <div class="font1">Add new skill</div>
         <div class="form row-gap">
           <div class="form-input column-gap">
-            <div class="font2">Skill name</div>
-            <input />
+            <div class="font2"><label for="field1">Skill name</label></div>
+            <input id="field1"/>
           </div><div class="form-input column-gap">
-            <div class="font2">Skill proficiency percentage, %</div>
-            <input />
+            <div class="font2"><label for="field2">Skill proficiency percentage, %</label></div>
+            <input id="field2"/>
           </div><button class="font4">Add</button>
         </div>
       </div>
@@ -567,7 +538,7 @@ I'm creative front-end developer</pre>
           </svg>
           <div class="about column-gap">
             <div class="font1">E-Mail</div>
-            <div class="font3">myemail@yandex.ru</div>
+            <div class="font3"><a href="mailto:myemail@yandex.ru">myemail@yandex.ru</a></div>
           </div>
         </div>
       </div>
